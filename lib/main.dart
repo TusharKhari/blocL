@@ -1,13 +1,29 @@
-import 'package:bloc_state_mngmnt/cubit/home_page_cubit.dart';
+import 'package:bloc_state_mngmnt/bloc/ex1/screens/home_page_ex2.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:bloc/bloc.dart';
-import 'dart:math' as math show Random;
-// 24
+import 'cubit/home_page_cubit.dart';
+
+// 1-19
+
 void main() {
   runApp(const MyApp());
 }
 
+// for cubit
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: 
+//       const HomePageCubit(),
+//     );
+//   }
+// }
+
+// for ex 1 bloc
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -15,11 +31,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomePageCubit(),
+      home: 
+     BlocProvider(
+      create: (_) => PersonsBloc(),
+      child: const HomePageEx1(),
+     )
     );
   }
 }
