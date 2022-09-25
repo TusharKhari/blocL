@@ -1,4 +1,4 @@
-import 'package:bloc_state_mngmnt/bloc/ex1/screens/home_page_ex2.dart';
+import 'package:bloc_state_mngmnt/bloc/ex1-step2/screens/home_page_ex2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -23,7 +23,12 @@ void main() {
 //   }
 // }
 
-// for ex 1 bloc
+// for ex 1 bloc step 2
+/**
+this ex loads data from json from a file and we have to start a live server so 
+data come from url  and saves and also saving that data in another map so we dont 
+have to call url again
+ */
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -39,3 +44,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
