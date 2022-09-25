@@ -1,7 +1,8 @@
-import 'package:bloc_state_mngmnt/bloc/ex1-step2/screens/home_page_ex2.dart';
+import 'package:bloc_state_mngmnt/bloc_apps/ex1-step2/screens/home_page_ex2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'bloc_apps/ex1-step2/bloc/persons_bloc.dart';
 import 'cubit/home_page_cubit.dart';
 
 // 1-19
@@ -24,6 +25,7 @@ void main() {
 // }
 
 // for ex 1 bloc step 2
+// ignore: slash_for_doc_comments
 /**
 this ex loads data from json from a file and we have to start a live server so 
 data come from url  and saves and also saving that data in another map so we dont 
