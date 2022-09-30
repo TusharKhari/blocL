@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'dart:math' as math show Random;
 
 const List names = [
-  "foo",
-  "bar",
-  "Baz",
+  'foo',
+  'bar',
+  'Baz',
 ];
 
 extension RandomElement<T> on Iterable<T> {
@@ -53,7 +53,7 @@ class _HomePageCubitState extends State<HomePageCubit> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("bloc tutorial"),
+          title: const Text('bloc tutorial'),
         ),
         body: StreamBuilder<String?>(
           stream: cubit.stream,
@@ -62,7 +62,7 @@ class _HomePageCubitState extends State<HomePageCubit> {
               onPressed: () {
                 cubit.pickRandomName();
               },
-              child: const Text("pick a random name"),
+              child: const Text('pick a random name'),
             );
             //return const Text('data');
             switch (snapshot.connectionState) {
@@ -73,7 +73,7 @@ class _HomePageCubitState extends State<HomePageCubit> {
               case ConnectionState.active:
                 return Column(
                   children: [
-                    Text(snapshot.data ?? ""),
+                    Text(snapshot.data ?? ''),
                     button,
                   ],
                 );
