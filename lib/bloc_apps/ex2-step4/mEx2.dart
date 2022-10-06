@@ -28,6 +28,7 @@ class _MainEx2State extends State<MainEx2> {
         //
         BlocProvider(
       create: (context) => AppBloc(
+        acceptedLoginHandle: const LoginHandle.fooBar(),
         loginApi: LoginApi(),
         notesApi: NotesApi(),
       ),
@@ -76,7 +77,7 @@ class _MainEx2State extends State<MainEx2> {
                   context.read<AppBloc>().add(LoginAction(
                         email: email,
                         password: password,
-                      ));
+                      ),);
                 },
               );
             } else {

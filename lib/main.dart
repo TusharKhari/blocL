@@ -1,8 +1,11 @@
+import 'package:bloc_state_mngmnt/bloc_apps/ex1-step2/bloc/persons_bloc.dart';
+import 'package:bloc_state_mngmnt/bloc_apps/ex1-step2/screens/home_page_ex1.dart';
 import 'package:bloc_state_mngmnt/bloc_apps/ex2-step4/mEx2.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 
-// 4 50
+// 5 18 
 
 void main() {
   runApp(const MyApp());

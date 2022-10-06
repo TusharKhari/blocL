@@ -1,6 +1,8 @@
+import 'package:bloc_state_mngmnt/bloc_apps/ex2-step4/models/string.dart';
 import 'package:flutter/foundation.dart' show immutable;
 
 import 'package:bloc_state_mngmnt/bloc_apps/ex2-step4/models/models.dart';
+import 'package:collection/collection.dart';
 
 @immutable
 class AppState {
@@ -29,4 +31,32 @@ class AppState {
         'loginHandle': loginHandle,
         'fetchNotes': fetchedNotes,
       }.toString();
+  @override
+  bool operator ==(covariant AppState other) {
+    final otherPropertiesAreEqual = isLoading == other.isLoading &&
+        loginError == other.loginError &&
+        loginHandle == other.loginHandle;
+
+    if (fetchedNotes == null && other.fetchedNotes == null) {
+      return otherPropertiesAreEqual;
+    } else {
+      return otherPropertiesAreEqual &&
+          (fetchedNotes?.isEqualTo(other.fetchedNotes) ?? false);
+    }
+  }
+
+  @override
+  int get hashCode => Object.hash(
+        isLoading,
+        loginError,
+        loginHandle,
+        fetchedNotes,
+      );
+}
+
+extension UnorderedEquality on Object {
+  bool isEqualTo(other) => const DeepCollectionEquality.unordered().equals(
+        this,
+        other,
+      );
 }
