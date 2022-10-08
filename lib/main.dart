@@ -1,11 +1,9 @@
-import 'package:bloc_state_mngmnt/bloc_apps/ex1-step2/bloc/persons_bloc.dart';
-import 'package:bloc_state_mngmnt/bloc_apps/ex1-step2/screens/home_page_ex1.dart';
-import 'package:bloc_state_mngmnt/bloc_apps/ex2-step4/mEx2.dart';
+
+import 'package:bloc_state_mngmnt/bloc_apps/ex3-step6/main_s6.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-
-// 5 18 
+// 5 18
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +16,7 @@ void main() {
 //   @override
 //   Widget build(BuildContext context) {
 //     return MaterialApp(
-//       home: 
+//       home:
 //       const HomePageCubit(),
 //     );
 //   }
@@ -38,7 +36,7 @@ have to call url again
 //   @override
 //   Widget build(BuildContext context) {
 //     return MaterialApp(
-//       home: 
+//       home:
 //      BlocProvider(
 //       create: (_) => PersonsBloc(),
 //       child: const HomePageEx1(),
@@ -47,8 +45,23 @@ have to call url again
 //   }
 // }
 
-
 // ex 2 s4 notes taking app
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   // This widget is the root of your application.
+//   @override
+//   Widget build(BuildContext context) {
+//     return const MaterialApp(
+//       home:
+//     MainEx2(),
+//     );
+//   }
+// }
+
+// ex 3 s6 photo loading app
+
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -56,8 +69,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: 
-    MainEx2(),
+      home: MainStep6(),
     );
   }
 }
