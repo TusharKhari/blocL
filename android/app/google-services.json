@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "417857058565",
+    "project_id": "photo-feed-50829",
+    "storage_bucket": "photo-feed-50829.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417857058565:android:5f5d8ff823521d80cee96c",
+        "android_client_info": {
+          "package_name": "com.example.bloc_state_mngmnt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417857058565-j47e4830vcq3r39veimcee4hsd3fnfjk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7mC2MTKB00jfyCsaAZUraykoajEJKQTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417857058565-j47e4830vcq3r39veimcee4hsd3fnfjk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "417857058565-277v83j9g0s607o9dcs5ohep6upmhg78.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.blocStateMngmnt"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

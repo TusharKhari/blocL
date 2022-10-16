@@ -1,26 +1,18 @@
-
-import 'package:bloc_state_mngmnt/bloc_apps/ex3-step6/main_s6.dart';
+import 'package:bloc_state_mngmnt/views/app.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-//  
-// 
+
+import 'firebase_options.dart';
+//
+//
 // https://github.com/vandadnp/youtube-course-bloc
-// 6 48 
+// 10 29 
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
-}
-
-
-
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: MainStep6(),
-    );
-  }
 }
